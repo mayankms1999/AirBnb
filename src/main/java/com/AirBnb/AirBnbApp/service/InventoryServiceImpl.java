@@ -45,7 +45,6 @@ public class InventoryServiceImpl implements InventoryService{
             inventoryRepository.save(inventory);
         }
     }
-
     @Override
     public void deleteFutureInventories(Room room) {
         log.info("Deleting the inventories of room with id: {}", room.getId());
