@@ -1,6 +1,7 @@
 package com.AirBnb.AirBnbApp.service;
 
 import com.AirBnb.AirBnbApp.dto.HotelDto;
+import com.AirBnb.AirBnbApp.dto.HotelInfoDto;
 import org.springframework.stereotype.Service;
 
 
@@ -15,4 +16,5 @@ public interface HotelService {
 
     void activateHotel(Long hotelId);
 
+    HotelInfoDto getHotelInfoById(Long hotelId);
 }

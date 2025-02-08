@@ -1,6 +1,6 @@
 package com.AirBnb.AirBnbApp.entity;
 
-import com.AirBnb.AirBnbApp.entity.enums.Role;
+import com.AirBnb.AirBnbApp.enums.Role;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;

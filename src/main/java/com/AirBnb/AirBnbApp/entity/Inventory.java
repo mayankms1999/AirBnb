@@ -1,9 +1,7 @@
 package com.AirBnb.AirBnbApp.entity;
 
 import jakarta.persistence.*;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -12,6 +10,8 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Entity
+@NoArgsConstructor
+@AllArgsConstructor
 @Getter
 @Setter
 @Builder
@@ -40,6 +40,9 @@ public class Inventory {
     @Column(nullable = false, columnDefinition = "INTEGER DEFAULT 0")
     private Integer bookedCount;
 
+    @Column(nullable = false, columnDefinition = "INTEGER DEFAULT 0")
+    private Integer reservedCount;
+
     @Column(nullable = false)
     private Integer totalCount;
 
@@ -60,4 +63,6 @@ public class Inventory {
 
     @UpdateTimestamp
     private LocalDateTime updatedAt;
+
+
 }

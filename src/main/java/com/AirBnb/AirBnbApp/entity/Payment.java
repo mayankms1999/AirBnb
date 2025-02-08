@@ -1,6 +1,6 @@
 package com.AirBnb.AirBnbApp.entity;
 
-import com.AirBnb.AirBnbApp.entity.enums.PaymentStatus;
+import com.AirBnb.AirBnbApp.enums.PaymentStatus;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -34,4 +34,7 @@ public class Payment {
 
     @UpdateTimestamp
     private LocalDateTime updatedAt;
+
+    @OneToOne(fetch = FetchType.LAZY)
+    private Booking booking;
 }

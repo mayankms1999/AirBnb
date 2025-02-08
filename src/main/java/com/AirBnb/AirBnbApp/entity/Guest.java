@@ -1,6 +1,6 @@
 package com.AirBnb.AirBnbApp.entity;
 
-import com.AirBnb.AirBnbApp.entity.enums.Gender;
+import com.AirBnb.AirBnbApp.enums.Gender;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;

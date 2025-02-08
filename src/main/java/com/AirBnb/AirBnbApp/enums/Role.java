@@ -1,4 +1,4 @@
-package com.AirBnb.AirBnbApp.entity.enums;
+package com.AirBnb.AirBnbApp.enums;
 
 public enum Role {
     GUEST,
